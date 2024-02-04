@@ -201,7 +201,9 @@ body {
         align-items: center;
         width: 100%;
     }
-
+    #game-moves{
+        border: none;
+    }
 
     #game-score {
         border: none;
