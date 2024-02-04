@@ -7,7 +7,6 @@ body {
     background-color: rgb(25, 25, 25);
     align-items: center;
     color: aliceblue;
-    font-family: Arial;
 
 }
 
@@ -171,6 +170,7 @@ body {
     }
 
     #title {
+        font-family: 'Times New Roman', Times, serif;
         font-size: calc(2vw + 20px);
     }
 
@@ -186,6 +186,7 @@ body {
 
     #game-result {
         font-size: calc(2.5vw + 24px);
+
     }
 }
 
@@ -197,12 +198,45 @@ body {
 
     #game-stats-score,
     #game-result {
+        align-items: center;
         width: 100%;
     }
 
-    #game-result {
-        margin: 80px;
+
+    #game-score {
+        border: none;
+    }
+
+    /* #stats>div {
+        padding: 0;
+        margin: 0;
         text-align: center;
-        
+        box-sizing: border-box;
+    } */
+    #game-result {
+        width: 90%;
+        margin-inline: 17px;
+        align-items: center;
+        text-align: center;
+        border-top: 2px solid whitesmoke;
+        border-bottom: 2px solid whitesmoke;
+    }
+}
+
+@media (max-width: 415px) {
+    .game-buttons {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 23px;
+    }
+
+    .g-img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
     }
 }
