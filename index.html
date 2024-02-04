@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="rock.css">
+</head>
+
+<body>
+
+    <div id="title">
+        <h1 id="title1">Rock Paper Scissor Game</h1>
+    </div>
+
+
+    <div id="banner">
+        <img src="banner.jpg" alt="">
+    </div>
+
+
+    <div id="game">
+        <button id="rock" class="game-buttons" onclick="playGame('Rock')">
+            <img class="g-img" src="rock.png" alt="">
+        </button>
+
+        <button id="paper" class="game-buttons" onclick="playGame('Paper')">
+            <img class="g-img" src="paper.png" alt="">
+        </button>
+
+        <button id="scissor" class="game-buttons" onclick="playGame('Scissor')">
+            <img class="g-img" src="scissor.png" alt="">
+        </button>
+    </div>
+
+
+    <div id="stats">
+
+        <div class="game-stats" id="game-moves">
+            <div id="pick">
+                <div class="pickers">
+                    <p class="heading">You Picked -- </p>
+                    <p id="YourMoves" class="moves"></p>
+                </div>
+                <div class="pickers">
+                    <p class="heading">Computer Picked --</p>
+                    <p id="ComputerMoves" class="moves"></p>
+                </div>
+            </div>
+           
+        </div>
+
+
+        <div class="game-stats" id="game-result">
+            <p id="result"></p>
+            <div id="reset-btn">
+                <button id="reset" onclick="
+                            score.win = 0; score.lose = 0; score.tie = 0; 
+                            localStorage.removeItem('score'); updateResult();">Reset
+                </button>
+            </div>
+        </div>
+
+
+        <div class="game-stats" id="game-score">
+            <div class="win-score">
+                <p class="heading-win">You Win: </p>
+                <p id="win" class="win-s"></p>
+            </div>
+
+            <div class="win-score">
+                <p class="heading-win">You Lose:</p>
+                <p id="lose" class="win-s"></p>
+            </div>
+
+            <div class="win-score">
+                <p class="heading-win">Match Tie:</p>
+                <p id="tie" class="win-s"></p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="rock.js"></script>
+</body>
+
+</html>
