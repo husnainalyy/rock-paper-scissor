@@ -195,13 +195,14 @@ body {
         flex-direction: column;
     }
 
-    .game-stats-score,
-    .game-result {
+    #game-stats-score,
+    #game-result {
         width: 100%;
     }
 
-    .game-result {
+    #game-result {
         margin: 80px;
         text-align: center;
+        
     }
 }
