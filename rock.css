@@ -84,7 +84,7 @@ body {
 .heading {
     font-weight: bold;
     font-size: 2vw;
-    margin: 8px;
+    margin-top: 8px;
     display: inline;
     text-align: center;
 }
@@ -94,7 +94,7 @@ body {
     font-family: Roboto;
     text-align: center;
     font-size: 2vw;
-    margin: 8px;
+    margin-top: 8px;
     display: inline;
     color: aqua;
 }
@@ -165,22 +165,29 @@ body {
 
 
 
-/* @media (max-width: 375px) {
-    #stats {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+@media (max-width: 414px) {
+    body {
+        font-size: 2vw;
     }
 
+    #title {
+        font-size: 4vw;
+    }
+
+    .heading,
+    .heading-win {
+        font-size: 3vw;
+    }
+
+    .moves,
+    .win-s {
+        font-size: 3vw;
+    }
 
     #game-result {
-        grid-column: span 2;
-        text-align: center;
+        font-size: 5vw;
     }
-    #game-stats-score{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-} */
+}
 
 @media (max-width: 415px) {
     #stats {
