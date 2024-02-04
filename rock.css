@@ -202,7 +202,7 @@ body {
         width: 100%;
     }
     #game-moves{
-        border: none;
+        border-right: none;
     }
 
     #game-score {
